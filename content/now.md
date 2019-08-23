@@ -3,7 +3,7 @@ title: "Now"
 date: 2019-07-24T19:58:26+02:00
 ---
 
-# What am I at right now?
+# The task at hand
 
 Getting used to working full time while doing freelance gigs on the side,
 reading a lot of classic stuff and recording my third solo album. Also making sure I socialize
