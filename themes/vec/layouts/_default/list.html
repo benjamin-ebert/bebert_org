@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+  
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  
+  {{ partial "header.html" . }}
+
+	<div class="content">
+
+		<section class="post">
+			<h1 class="post-title">{{ humanize .Section }}</h1>
+			<div class="post-content">
+				{{ .Content }}
+			</div>
+			{{ if eq .Section "music" }}
+			<iframe
+				src="https://open.spotify.com/embed/album/5SNGUmSb33KpLgY4ZZ4zkH"
+				width="300" height="280" frameborder="0"
+				allowtransparency="true" allow="encrypted-media">
+			</iframe>
+			{{ end }}
+			<hr>
+		</section>
+
+		<section class="post-archive">
+			{{ range .Pages }}
+				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+				<p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+				<hr>
+			{{ end }}
+		</section>
+	</div>
+
+	<div class="content">
+    <section class="posts">
+      {{ $paginator := .Paginate (.Data.Pages.GroupByDate "2006-01") }} 
+      {{ range $paginator.PageGroups }}
+      <div class="posts-archive">
+        {{ $month := (print .Key "-01") }}
+        <time class="posts-archive-month" datetime="{{ $month }}">{{ dateFormat "Jan 2006" $month }}</time>
+        <ul class="posts-list">
+        {{ range .Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </section>
+    {{ partial "pagination.html" . }}
+  </div>
+
+  {{ partial "footer.html" . }}
+  
+  {{ partial "analytics.html" . }}
+
+</body>
+
+</html>

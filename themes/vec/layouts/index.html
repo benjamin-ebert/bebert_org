@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <title> {{ .Site.Title }} </title>
+
+  {{ with .Site.Params.Keywords }}<meta name="keywords" content="{{.}}">{{ end }}
+  {{ with .Site.Params.Description }}<meta name="description" content="{{.}}">{{ end }}
+
+  {{ partial "head.html" . }}
+
+</head>
+
+<body class="index">
+  {{ partial "header.html" . }}
+
+  <section class="user-profile">
+    <figure class="user-avatar">
+      <img alt="avatar" src="{{ .Site.Params.Avatar }}">
+      <figcaption class="user-socials">
+        {{ with .Site.Params.TwitterID }}
+        <a href="https://twitter.com/{{.}}" title="Twitter"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+        {{ end }}
+		{{ with .Site.Params.GithubID }}
+        <a href="https://github.com/{{.}}" title="GitHub"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+        {{ end }}
+        {{ with .Site.Params.LinkedInID }}
+        <a href="http://linkedin.com/in/{{.}}" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        {{ end }}
+      </figcaption>
+    </figure>
+	<h1 class="user-motivation">Hi, I'm Benjamin.<br>I write 
+		<span style="color: #da574d"><a href="{{ .Site.BaseURL }}/code/">code</a></span>, 
+		<span style="color: #da574d"><a href="{{ .Site.BaseURL }}/music/">music</a></span> and 
+		<span style="color: #da574d"><a href="{{ .Site.BaseURL }}/notes/">notes</a></span>.
+	</h1>
+  </section>
+
+  {{ partial "footer.html" . }}
+  <!-- {{ partial "analytics.html" . }} -->
+</body>
+</html>

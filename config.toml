@@ -1,0 +1,45 @@
+baseurl = "/"
+title = "be"
+theme = "vec"
+languageCode = "en-us"
+paginate = 10
+disqusShortname = ""
+googleAnalytics = ""
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "now"
+    weight = -100
+    url = "/now"
+  [[menu.main]]
+    name = "code"
+    weight = -90
+    url = "/code"
+  [[menu.main]]
+    name = "music"
+    weight = -80
+    url = "/music"
+  [[menu.main]]
+    name = "notes"
+    weight = -70
+    url = "/notes"
+  [[menu.main]]
+    name = "about"
+    weight = -60
+    url = "/about"
+
+[params]
+  Keywords = "key, 关键字, キーワード"
+  Description = "There are some words to describe your site"
+  Avatar = "img/avatar.jpg"
+  SelfIntro1 = "Hi, I'm Benjamin."
+  SelfIntro2 = "I write code, music and notes."
+  Email = "info@benjaminebert.org"
+
+  GithubID = "Your Github ID"
+  TwitterID = "Your Twitter ID"
+  FacebookID = "Your Facebook ID"
+  LinkedInID = "Your LinkedIn ID"
+  GoogleplusID = "Your Googleplus ID"
+

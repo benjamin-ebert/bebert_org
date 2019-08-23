@@ -1,0 +1,110 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+footer {
+	text-align: center
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Mono', monospace;
+}
+
+a {
+	color: #da574d;
+}
+
+a:hover {
+	color: #444;
+}
+
+header {
+	box-shadow: 0 3px 2px -2px gray;
+}
+
+header a:hover, header .current a {
+    color: #da574d;
+}
+
+h1.post-title, .post-title>a {
+	color: #da574d;
+}
+
+.post>hr {
+	margin-bottom: 5rem;
+}
+
+.posts {
+	margin-left: 0rem !important;
+}
+
+.user-profile .user-motivation {
+    max-width: 56rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 1rem auto;
+}
+@media (max-width: 480px) {
+	.user-profile .user-motivation {
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+	}
+}
+
+.user-profile {
+    padding: 8rem 1rem 12rem;
+}
+
+section.post-archive {
+	width: 50%;
+	margin: auto;
+}
+
+@media (max-width:480px) {
+	section.post-archive {
+		width: 100%;
+	}
+}
+
+.post-archive>h1>a {
+	color: #444
+}
+
+.post-archive>h1>a:hover {
+	color: #da574d; 
+}
+
+.post-archive>hr {
+	margin-bottom: 3rem;
+}
+
+.posts-archive>ul {
+	list-style-type: none;
+}
+
+.posts-archive>ul>li {
+	margin-left: 16vw;
+	font-size: larger;
+}
+
+@media (max-width: 480px) {
+	.posts-archive>ul>li {
+		margin-left: 6vw;
+	}
+}
+
+.posts-archive>ul>li>a {
+	color: black;
+}
+
+.posts-archive>ul>li>a:hover {
+	color: #da574d;
+}
+
+#TableOfContents {
+	position: fixed;
+}
