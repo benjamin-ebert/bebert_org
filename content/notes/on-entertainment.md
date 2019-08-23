@@ -1,7 +1,6 @@
 ---
 title: "On Entertainment"
 date: 2019-07-28T16:35:39+02:00
-draft: true
 ---
 
 It's worth thinking about what content we consume when we take a break. I used
