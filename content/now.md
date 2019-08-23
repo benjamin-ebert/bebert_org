@@ -1,7 +1,6 @@
 ---
 title: "Now"
 date: 2019-07-24T19:58:26+02:00
-draft: true
 ---
 
 # What am I at right now?
