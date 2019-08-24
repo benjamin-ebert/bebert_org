@@ -109,6 +109,15 @@ section.post-archive {
 	color: #da574d;
 }
 
+.content.wide {
+	max-width: 40rem; 
+}
+.content.toc {
+	max-width: 40rem; 
+}
+
+
 #TableOfContents {
 	position: fixed;
+	margin: 5rem 0 0 38rem;
 }
