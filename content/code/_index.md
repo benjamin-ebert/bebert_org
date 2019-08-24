@@ -1,1 +1,3 @@
-#### *- Some solutions to things I ran into along my way -*
+# Things that tripped me up...
+
+... and how to solve them. Mainly Laravel, CSS and jQuery.
