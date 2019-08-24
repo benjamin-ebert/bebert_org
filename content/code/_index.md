@@ -1,4 +1,4 @@
-# Things that tripped me up...
+# Things that can trip us up...
 
-... and how to solve them. Mainly Laravel, CSS and jQuery. Some philosophical pieces on freelancing
+... and how to handle them. Mainly Laravel, CSS and jQuery. Some philosophical pieces on freelancing
 as a web developer.
