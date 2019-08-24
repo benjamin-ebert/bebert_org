@@ -167,3 +167,7 @@ section.post-archive {
 .music-info {
 	margin: 1rem;
 }
+
+iframe {
+	border-radius: 5px;
+}
