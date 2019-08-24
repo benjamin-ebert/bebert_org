@@ -10,6 +10,51 @@ header {
 	font-weight: normal;
 }
 
+.container {
+  margin: 2rem auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: ' ';
+  clear: both;
+  margin: 0.5rem 0;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+}
+
+
+
 footer {
 	text-align: center
 }
@@ -38,10 +83,6 @@ h1.post-title, .post-title>a {
 	color: #da574d;
 }
 
-.post>hr {
-	margin-bottom: 5rem;
-}
-
 .posts {
 	margin-left: 0rem !important;
 }
@@ -66,6 +107,7 @@ h1.post-title, .post-title>a {
 section.post-archive {
 	width: 50%;
 	margin: auto;
+	margin-top: 5rem;
 }
 
 @media (max-width:480px) {
@@ -120,4 +162,8 @@ section.post-archive {
 #TableOfContents {
 	position: fixed;
 	margin: 5rem 0 0 38rem;
+}
+
+.music-info {
+	margin: 1rem;
 }
