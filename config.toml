@@ -29,6 +29,9 @@ googleAnalytics = ""
     weight = -60
     url = "/about"
 
+[taxonomies]
+  tag = "tags"
+
 [params]
   Keywords = "key, 关键字, キーワード"
   Description = "There are some words to describe your site"

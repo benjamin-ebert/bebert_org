@@ -31,7 +31,7 @@
 		<section class="post-archive">
 			{{ range .Pages }}
 				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-				<p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+				<p>{{ .PublishDate.Format "January 2, 2006" }} in {{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</p>
 				<hr>
 			{{ end }}
 		</section>
