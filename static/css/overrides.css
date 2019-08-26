@@ -170,4 +170,5 @@ section.post-archive {
 
 iframe {
 	border-radius: 5px;
+	box-shadow: 3px 3px 10px -2px gray;
 }
