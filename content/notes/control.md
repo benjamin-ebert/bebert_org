@@ -1,5 +1,5 @@
 ---
-title: "On Control"
+title: "Control"
 date: 2019-08-23T13:18:33+02:00
 draft: true
 ---

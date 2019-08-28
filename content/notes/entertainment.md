@@ -1,5 +1,5 @@
 ---
-title: "On Entertainment"
+title: "Entertainment"
 date: 2019-07-28T16:35:39+02:00
 ---
 
