@@ -1,7 +1,7 @@
 ---
 title: "Building Magento 2 Extensions: Figuring Out Where to Start"
 date: 2019-09-06T08:49:19+02:00
-draft: true
+draft: false
 tags: ['Magento']
 ---
 
