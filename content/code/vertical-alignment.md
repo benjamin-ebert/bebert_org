@@ -7,6 +7,7 @@ tags : ["CSS"]
 To align things vertically inside a div, give that div the following properties:
 ```
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 ```

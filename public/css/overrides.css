@@ -69,15 +69,21 @@ section.post-archive {
 	}
 }
 
-.post-archive>h1>a {
+.post-item {
+	width: 100%;
+	background: white;
+	border: 2px solid gray;
+	border-radius: 5px
+}
+.post-item>h1>a {
 	color: #444
 }
 
-.post-archive>h1>a:hover {
+.post-item>h1>a:hover {
 	color: #da574d; 
 }
 
-.post-archive>hr {
+.post-item>hr {
 	margin-bottom: 3rem;
 }
 
