@@ -1,7 +1,7 @@
 ---
 title: "Best Unknown Vim Commands"
 date: 2019-09-08T08:34:49+02:00
-draft: true
+draft: false
 tags: ["Vim"] 
 ---
 
