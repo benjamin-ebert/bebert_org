@@ -1,4 +1,4 @@
-# Things that can trip us up...
+# Laravel, CSS, Magento
 
-... and how to handle them. Mainly Laravel, CSS and jQuery. Some philosophical pieces on freelancing
-as a web developer.
+My share of stuff I ran into, solved, and composed small instructional articles
+of.

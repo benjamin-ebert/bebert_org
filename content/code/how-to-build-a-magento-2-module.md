@@ -27,10 +27,10 @@ Copy this to etc/module.xml:
 </config>
 ```
 
-The first module node defines the name and version of your module.
-Version triggers update command, if the deployed version is older than the updatet version.
-The second module node specifies which existing module your module depends on.
-One module node for every module you need as a dependency.
+The first module node defines the name and version of your module.  Version
+triggers update command, if the deployed version is older than the updatet
+version.  The second module node specifies which existing module your module
+depends on.  One module node for every module you need as a dependency.
 
 
 Copy this to registration.php:
@@ -41,14 +41,14 @@ Copy this to registration.php:
 );
 ```
 
-This tells Magento where your module can be found. It reflects the directory structure of app/code/Vendorname/Modulename
+This tells Magento where your module can be found. It reflects the directory
+structure of app/code/Vendorname/Modulename
 
-These steps are the same for every module you create. The only differences will be module names, versions and dependencies.
+These steps are the same for every module you create. The only differences will
+be module names, versions and dependencies.
 
-You can already activate your module at this point:
-```
-php bin/magento setup:upgrade
-```
+You can already activate your module at this point: ``` php bin/magento
+setup:upgrade ```
 
 Verify it's there:
 ```
