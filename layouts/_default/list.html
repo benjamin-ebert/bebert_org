@@ -56,7 +56,8 @@
 			{{ range .Pages }}
 				<div class="post-item">
 					<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-					<p>{{ .PublishDate.Format "January 2, 2006" }} in {{ with .Params.tags }}{{ delimit . ", " }}{{ end }}
+					<p>{{ .PublishDate.Format "January 2, 2006" }} in 
+						<a href="#">{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</a>
 					</p> 
 				</div>
 			{{ end }}
