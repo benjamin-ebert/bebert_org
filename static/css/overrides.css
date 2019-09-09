@@ -121,7 +121,6 @@ section.post-archive {
 }
 
 .post-item {
-	width: 100%;
 	height: 9rem;
 	background: lightgray;
 	border: 2px solid transparent;
@@ -131,7 +130,7 @@ section.post-archive {
     display: flex;
     flex-direction: column;
     align-items: center;
-	box-shadow: 4px 4px 3px -2px darkgrey;
+	box-shadow: 0 4px 3px -2px darkgrey;
 }
 
 .post-item>h1>a {
