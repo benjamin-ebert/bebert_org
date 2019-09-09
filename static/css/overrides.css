@@ -115,7 +115,7 @@ section.post-archive {
 	section.post-archive {
 		width: 100%;
 	}
-	.post-item>h1 {
+	.post-item h1 {
 		font-size: 1.25rem;
 	}
 }
@@ -123,26 +123,23 @@ section.post-archive {
 .post-item {
 	height: 9rem;
 	background: #eee;
-	border: 2px solid transparent;
+	border: 1px solid gray;
 	border-radius: 5px;
 	margin: 30px 0;
+	padding: 0 10px;
 	justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-	box-shadow: 0 4px 3px -2px darkgrey;
+	/*box-shadow: 0 4px 3px -2px darkgrey;*/
 }
 
-.post-item>h1>a {
+.post-item h1 a {
 	color: #444
 }
 
-.post-item>h1>a:hover {
+.post-item h1 a:hover {
 	color: #da574d; 
-}
-
-.post-item>hr {
-	margin-bottom: 3rem;
 }
 
 .posts-archive>ul {
