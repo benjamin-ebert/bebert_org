@@ -122,7 +122,7 @@ section.post-archive {
 
 .post-item {
 	height: 9rem;
-	background: lightgray;
+	background: #eee;
 	border: 2px solid transparent;
 	border-radius: 5px;
 	margin: 30px 0;
