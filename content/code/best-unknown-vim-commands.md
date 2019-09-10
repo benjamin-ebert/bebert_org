@@ -2,10 +2,11 @@
 title: "Best Unknown Vim Commands"
 date: 2019-09-08T08:34:49+02:00
 draft: false
+toc: true
 tags: ["Vim"] 
 ---
 
-## 1. gq - Autoformatting
+## 1. `gq` - Autoformatting
 gq auto formats your selection according to your formatting configurations in
 your .vimrc. I often use this after editing a paragraph when the formatting is
 messed up. Jump to the beginning of the paragraph, hit v to switch to visual
