@@ -6,13 +6,13 @@ toc: true
 tags: ["Vim"] 
 ---
 
-## 1. `gq` - Autoformatting
-gq auto formats your selection according to your formatting configurations in
-your .vimrc. I often use this after editing a paragraph when the formatting is
-messed up. Jump to the beginning of the paragraph, hit v to switch to visual
-mode, select the entire paragraph and hit gq - boom, the entire thing looks nice
-again. Even faster: When you're at the beginning of the paragraph, hit gq in
-normal mode, then hit } to auto format the whole paragraph.
+## `gq` - Autoformatting
+`gq` autoformats your selection according to your formatting configurations in
+`.vimrc`. I often use this after editing a paragraph when the formatting is
+messed up. Jump to the beginning of the paragraph, hit `v` to switch to visual
+mode, select the entire paragraph and hit `gq` - boom, the entire thing looks nice
+again. Even faster: When you're at the beginning of the paragraph, hit `gq` in
+normal mode, then hit `}` to auto format the whole paragraph.
 
 ## 2. :find and :tabfind
 In your .vimrc ```set path=.,/usr/include,,**``` will make :find search
