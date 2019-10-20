@@ -1,5 +1,5 @@
 ---
-title: "Deplpoy Laravel to Netcup Shared Hosting"
+title: "Deploy Laravel to Netcup Shared Hosting"
 date: 2019-10-19T10:12:49+02:00
 draft: false
 tags: ["Hosting"] 
@@ -26,9 +26,16 @@ tags: ["Hosting"]
   blog.zip
 
 - Open a terminal and SSH into your hosting account: ```ssh -p 22 hosting123456@youdomain.com```
-- ```mkdir httpdocs/blog```
-- ```unzip blog.zip```
-- ```mv blog/public/* httpdocs/blog```
+- Create a subdirectory in httpdocs, the public stuff of your laravel app will
+  go here in a second - ```mkdir httpdocs/blog```
+- Unpack your laravel app (inside your root directory, so that it then has a
+  folder called blog/) - ```unzip blog.zip```
+- From inside your unpacked app, move everything from the public directory into
+  the subdirectory in httpdocs, which we created two steps earlier - ```mv blog/public/* httpdocs/blog```
+- Don't forget to move ```.htaccess```, which won't get moved because it's
+  hidden - ```mv blog/public/.htaccess httpdocs/blog```
+- Check if blog/public is completely empty: ```ls -la blog/public```
+- Check if all files have been moved: ```ls -la httpdocs/blog```
 
 - In your browser, open yourdomain.com/blog
 - You should see a couple error messages about vendor/autoload.php not being
@@ -61,35 +68,6 @@ tags: ["Hosting"]
 - Dont't forget to put the DB_HOST and DB_PORT on different lines, not in one
   line, as the information form netcup suggests
 - PUT THE GODDAMN PASSWORD IN SINGLEQUOTES
-
-## Routes
-
-- Make sure there is a .htaccess file in httpdocs/blog, and it says:
-```
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-
-    RewriteEngine On
-
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
-
-    # Handle Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
-</IfModule>
-```
-(This is the default laravel .htaccess file, normally automatically created in
-blog/public)
 
 ## Other Stuff
 
