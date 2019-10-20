@@ -190,3 +190,8 @@ iframe {
 .post pre {
 	white-space: pre;
 }
+
+.post pre code {
+	overflow-x: scroll;
+}
+
