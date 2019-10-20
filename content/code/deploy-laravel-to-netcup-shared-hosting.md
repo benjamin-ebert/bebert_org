@@ -26,7 +26,9 @@ tags: ["Hosting"]
   blog.zip
 
 - Open a terminal and SSH into your hosting account: 
-  ```ssh -p 22 hosting123456@youdomain.com```
+  ```
+  ssh -p 22 hosting123456@youdomain.com
+  ```
 - Create a subdirectory in httpdocs, the public stuff of your laravel app will
   go here in a second - 
   ```
@@ -34,30 +36,47 @@ tags: ["Hosting"]
   ```
 - Unpack your laravel app (inside your root directory, so that it then has a
   folder called blog/) - 
-  ```unzip blog.zip```
+  ```
+  unzip blog.zip
+  ```
 - From inside your unpacked app, move everything from the public directory into
   the subdirectory in httpdocs, which we created two steps earlier - 
-  ```mv blog/public/* httpdocs/blog```
+  ```
+  mv blog/public/* httpdocs/blog
+  ```
 - Don't forget to move ```.htaccess```, which won't get moved because it's
   hidden - 
   ```
   mv blog/public/.htaccess httpdocs/blog
   ```
-- Check if blog/public is completely empty: ```ls -la blog/public```
-- Check if all files have been moved: ```ls -la httpdocs/blog```
+- Check if blog/public is completely empty: 
+  ```
+  ls -la blog/public
+  ```
+- Check if all files have been moved: 
+  ```
+  ls -la httpdocs/blog
+  ```
 
 - In your browser, open yourdomain.com/blog
 - You should see a couple error messages about vendor/autoload.php not being
   found
-- ```vi httpdocs/blog/index.php```
+- Open index.php for editing
+  ```
+  vi httpdocs/blog/index.php
+  ```
 - Edit line 24 (may have changed by now), so that it looks like this:
-  ```require __DIR__.'/../../blog/vendor/autoload.php';```
+  ```
+  require __DIR__.'/../../blog/vendor/autoload.php';
+  ```
 - Save index.php
 - Refresh yourdomain.com/blog
 - You should see a similar error message, this time mentioning bootstrap/app.php
-- ```vi httpdocs/blog/index.php```
-- Edit line 38 (may have changed by now), so that it looks like this: ```$app =
-  require_once __DIR__.'/../../whsa/bootstrap/app.php';```
+- Open index.php for editing again
+- Edit line 38 (may have changed by now), so that it looks like this: 
+  ```
+  $app = require_once __DIR__.'/../../whsa/bootstrap/app.php';
+  ```
 
 - Refresh yourdomain.com/blog
 - You should see a laravel error message, typically stating some SQL error,
@@ -81,6 +100,11 @@ tags: ["Hosting"]
 ## Other Stuff
 
 - Installing composer:
-  ```cd /blog``` (The app directory containing everything)
-  ```wget https://getcomposer.org/composer.phar```
-  ```php composer.phar install```
+  ```
+  cd /blog
+  ``` 
+  (The app directory containing everything)
+- ```
+  wget https://getcomposer.org/composer.phar
+  php composer.phar install
+  ```
