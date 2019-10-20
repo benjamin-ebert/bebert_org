@@ -25,15 +25,24 @@ tags: ["Hosting"]
 - Your root directory now looks like this: .cache/ ... bin/ ... var/ ...
   blog.zip
 
-- Open a terminal and SSH into your hosting account: ```ssh -p 22 hosting123456@youdomain.com```
+- Open a terminal and SSH into your hosting account: 
+  ```ssh -p 22 hosting123456@youdomain.com```
 - Create a subdirectory in httpdocs, the public stuff of your laravel app will
-  go here in a second - ```mkdir httpdocs/blog```
+  go here in a second - 
+  ```
+  mkdir httpdocs/blog
+  ```
 - Unpack your laravel app (inside your root directory, so that it then has a
-  folder called blog/) - ```unzip blog.zip```
+  folder called blog/) - 
+  ```unzip blog.zip```
 - From inside your unpacked app, move everything from the public directory into
-  the subdirectory in httpdocs, which we created two steps earlier - ```mv blog/public/* httpdocs/blog```
+  the subdirectory in httpdocs, which we created two steps earlier - 
+  ```mv blog/public/* httpdocs/blog```
 - Don't forget to move ```.htaccess```, which won't get moved because it's
-  hidden - ```mv blog/public/.htaccess httpdocs/blog```
+  hidden - 
+  ```
+  mv blog/public/.htaccess httpdocs/blog
+  ```
 - Check if blog/public is completely empty: ```ls -la blog/public```
 - Check if all files have been moved: ```ls -la httpdocs/blog```
 
