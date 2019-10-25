@@ -1,7 +1,7 @@
 ---
 title: "How to Make Vim Use Your Terminal Background Color"
 date: 2019-10-25T23:07:49+02:00
-draft: true
+draft: false
 tags: ["Vim"] 
 ---
 
