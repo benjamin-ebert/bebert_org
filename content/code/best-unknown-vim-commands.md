@@ -51,3 +51,7 @@ itself.
 Any word completion. Type the first few characters of a variable and hit
 `Ctrl-n` to cycle through the available completions (based on what is already in
 the file). `Ctrl-p` cycles backwards.
+
+## `=` - Indentation
+Hitting `=` two times indents the current line. Hitting `=3=` indents the next
+three lines.
