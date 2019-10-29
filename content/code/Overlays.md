@@ -9,8 +9,12 @@ Suppose we have a html structure like this:
 
 ```
 <div class="surrounding-element">
-	<div class="regular-content">This is regular content</div>
-	<div class="overlay">This is the overlay</div>
+	<div class="regular-content">
+		This is regular content
+	</div>
+	<div class="overlay">
+		This is the overlay
+	</div>
 </div>
 ```
 

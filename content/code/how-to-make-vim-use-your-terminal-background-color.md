@@ -9,8 +9,8 @@ The trick is to set no background color at all. In your ```.vimrc``` put this
 under your ```colorscheme``` configuration:
 ```
 hi NonText ctermbg=none	
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr ctermbg=NONE 
+hi Normal guibg=none ctermbg=none
+hi LineNr ctermbg=none
 ```
 
 Close and reopen Vim. It wil now have a transparent background, which means it

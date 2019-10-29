@@ -191,3 +191,7 @@ iframe {
 	white-space: pre;
 }
 
+.post pre code {
+	word-wrap: initial;
+}
+
