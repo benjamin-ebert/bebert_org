@@ -6,16 +6,19 @@ tags: ["Hosting"]
 ---
 Title ideas:
 	- Offer hassle free hosting for your client's Laravel site
+	- This is how you want to host your client's Laravel site
+	- How to be a one-off hosting solution for your client
 
 Goals:
 	- Your future deployment workflow consists of not more than a push to github
+	- You can test your changes on a staging environment
 	- You don't have to deal with server configuration
-	- You can deliver a on-off solution: Domain, Email, VPS, Media Storage,
-	  Backups, SSL, and everything High Speed - all your client does is pay
+	- You become a on-off solution: Domain, Subdomains, Email, VPS, Media Storage,
+	  Backups, SSL
 	- You don't have to worry about unpredictable costs based on server usage
-	- Everything is ultra reliable
-	- You keep it affordable for your client (or optionally add a nice margin
-	  for yourself)
+	- Everything is ultra reliable and high-speed
+	- You can keep it affordable for your client (or add a nice margin for yourself)
+	- You can offer different hosting packages with different ressources
 
 To host a complete Project for a client, you'll need 
 - domain and email server (Netcup)
